@@ -1,7 +1,12 @@
-<h1>{{title | lowercase}}</h1>
 
-<h3>Today: {{today | date: 'dd/MM/yyyy'}}</h3>
+<!-- Navbar -->
+<app-navbar></app-navbar>
 
-<input #color placeholder="type your color">
-<button (click)="setTextColor(color.value)">Set Color</button>
-<p [style.color]="pColor">This is just a sample text</p>
+<!-- Aplication content -->
+<div class="container">
+    <!-- <app-home></app-home> -->
+    <app-details></app-details>
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>
