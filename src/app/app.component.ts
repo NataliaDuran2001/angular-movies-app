@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root-test',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'movies-app';
+  title = 'The title of App Component';
+
+  today = new Date();
+  pColor = '';
+  setTextColor(_color: string){
+    console.log(_color);
+    this.pColor = _color;
+  }
+
 }
